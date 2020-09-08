@@ -1,0 +1,151 @@
+--------------------------------------------------------------------------
+Raw code for DeckerCV
+I used the `vitae` package and R version 4
+--------------------------------------------------------------------------
+
+---
+name: Stephen
+surname: Decker
+profilepic:
+position: "Ph.D. Candidate"
+address: "Dalton, Massachusetts"
+phone: "(713) 452-9516"
+www: 
+email: "DeckerStephenT@gmail.com"
+twitter: decker_st
+github: stdecker
+linkedin: deckerst
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "A 4th year Ph.D. Candidate at the University of Massachusetts Amherst with experiences in teaching undergraduate courses in health-related disciplines, CPR/First Aid and Lifeguarding, and providing exercise programs to high-risk individuals in healthcare and recreational settings."
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(dplyr)
+```
+
+# About Me
+
+ * Certified Clinical Exercise Physiologist (CEP), Exercise Physiologist (EP-C), and Exercise is Medicine Level 3 Credential through the American College of Sports Medicine. Certified Basic Life Support Provider through the American Heart Association.
+ * Fourth year Ph.D. Candidate in the Department of Kinesiology at the University of Massachusetts Amherst studying the relationship between oxygen delivery, skeletal muscle oxidative metabolism, and the role of reactive oxygen species in health and disease.
+ * Experienced in teaching undergraduate courses in health-related disciplines (4 years), instructing CPR/First Aid and Lifeguarding (5+ years), and providing exercise programs to low- and high-risk individuals in healthcare and recreational settings (4+ years).
+ * Led exercise testing, evaluation, and behavioral intervention programs for high-risk individuals with cardiovascular, metabolic, pulmonary, and musculoskeletal ailments in research and clinical settings.
+ * Facilitated student learning, leadership development, and student engagement through providing instructional support and resources to promote student success.
+
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Details,
+  "Ph.D. in Kinesiology", "Expected 2022","University of Massachusetts Amherst",  "Amherst, Massachusetts", "Tenative Dissertation Project: The Role of Sirtuins in Cigarette Smoke-Induced Skeletal Muscle Dysunction",
+  "Ph.D in Nutrition and Integrative Physiology", "Not Completed", "University of Utah", "Salt Lake City, Utah", "Transfered to the University of Massachusetts Amherst to continue studies with mentor Gwenael Layec", 
+  "M.S. in Kinesiology", "August 2016", "Stephen F. Austin State University", "Nacogdoches, Texas", "Thesis Project: Effects of High-Intensity Interval Training on Postprandial Lipemia and Glycemia",
+  "B.S. in Kinesiology", "May 2014", "Stephen F. Austin State University", "Nacogdoches, Texas", "Graduated with Honors, Cum Laude", 
+) %>% 
+  detailed_entries(Institution, Year, Degree, Where, Details)
+```
+
+# Relevant Experience
+
+
+```{r}
+tribble(
+  ~ Year, ~ Position, ~ Institution, ~ Where,
+  "August 2018-Present", "Graduate Teaching and Research Assistant", "University of Massachusetts Amherst", "Amherst, Massachusetts",
+) %>% 
+  detailed_entries(Institution, Year, Position, Where)
+```
+
+* Led several research projects, including my own dissertation, focusing on assessing vascular function (using Doppler ultrasound) and skeletal muscle metabolism (using ^31^Phosphorus-Magnetic Resonance Spectroscopy and High-Resolution Respirometry).
+* Developed graduate and undergraduate lab members' techniques and fundamental theories surrounding common laboratory techniques.
+* Facilitated discussion and lab courses for the Department of Kinesiology including Advanced Exercise Physiology, Anatomy & Physiology, and Human Performance & Nutrition.
+* Communicated research findings by presenting an oral presentations at the international conferences, department seminars, and poster presentations (see below).
+
+\pagebreak
+  
+  
+```{r}
+tribble(
+  ~ Year, ~ Position, ~ Institution, ~ Where,
+  "July 2017-August 2018", "Graduate Research Assistant", "University of Utah Vascular Research Laboratory","Salt Lake City, UT",
+) %>% 
+  detailed_entries(Institution, Year, Position, Where)
+```
+
+* Led several projects focusing on vascular function and oxygen delivery in healthy subjects, and individuals diagnosed with Chronic Obstructive Pulmonary Disease.
+* Collaborated with investigators in the Department of Radiology to develop new methods of assessing skeletal muscle blood flow using Dynamic Contrast Enhanced (DCE) MRI.
+
+
+```{r}
+tribble(
+  ~ Year, ~ Position, ~ Institution, ~ Where,
+  "May 2016 - July 2017", "Clinical Exercise Physiologist", "Baylor College of Medicine","Houston, TX", 
+) %>% 
+  detailed_entries(Institution, Year, Position, Where)
+```
+* Designed and implemented weight loss and exercise programs for individuals with cardiovascular, musculoskeletal, metabolic, pulmonary, and neurological conditions.
+* Worked with a team to deliver weight loss and exercise interventions to middle-aged and elderly adults with and without chronic ailments.
+* Conducted and assessed cardiovascular (EKG stress tests) fitness, muscular exercise performance (BIODEX), and activities of daily living, and used these measures to build safe and effective exercise regimens.
+
+
+
+```{r}
+tribble(
+  ~ Year, ~ Position, ~ Institution, ~ Where,
+  "August 2014 - May 2016", "Graduate Teaching Assistant", "Stephen F. Austin State University","Nacogdoches, TX",
+) %>% 
+  detailed_entries(Institution, Year, Position, Where)
+```
+
+* Created and delivered course content, as an instructor of record, for undergraduate-level courses.
+* Instructed students on using visualization software to assess human motion in the Biomechanics Lab course.
+
+```{r}
+tribble(
+  ~ Year, ~ Position, ~ Institution, ~ Where,
+  "May 2015 - September 2015", "Pool Manager (Seasonal)", "City of Pasadena, Texas","Pasadena, TX",
+) %>% 
+  detailed_entries(Institution, Year, Position, Where)
+```
+
+* Oversaw pool operations at several aquatics facilities, including maintaining a safe and welcoming recreational experience for pool patrons and guests.
+* Trained and instructed lifeguards, and led regular in-service training.
+
+```{r}
+tribble(
+  ~ Year, ~ Position, ~ Institution, ~ Where,
+  "January 2014 - October 2014", "Personal Trainer & Head Lifeguard", "Stephen F. Austin State University Recreation Center","Nacogdoches, TX",
+) %>% 
+  detailed_entries(Institution, Year, Position, Where)
+```
+
+* Conducted exercise testing, evaluation, and programming for several personal training clients.
+* Led and conducted lifeguard training and managed pool operations.
+
+# Presentations
+```{r}
+tribble(
+  ~ Year, ~ Award, ~ Institution, ~ Where,
+  "November 2019", "The Physiological Role of Sirtuins: A Target for Aging or More Hype?", "University of Massachusetts Department of Kinesiology","Amherst, MA",
+  "May 2019", "Effects of Tetrahydrobiopterin on Limb Blood Flow and Muscle Metabolism in Patients with COPD", "International Society for Magnetic Resonance in Medicine","Montreal, QC",
+) %>% 
+  detailed_entries(Institution, Year, Award, Where)
+```
+
+
+# Honors
+```{r}
+tribble(
+  ~ Year, ~ Award, ~ Institution, ~ Where,
+  "May 2019", "Trainee Stipent Award Recipient", "International Society for Magnetic Resonance in Medicine","Montreal, QC",
+  "February 2017", "Student Research Poster Finalist (MS)", "Texas American College of Sports Medicine","Waco, TX",
+  "March 2016", "Student Research Development Award Recipient", "Texas American College of Sports Medicine","College Station, TX",
+  "February 2014", "SFASU Undergraduate Research Conference Top Scholar", "Stephen F. Austin State University School of Honors","Nacogdoches, TX",
+) %>% 
+  detailed_entries(Institution, Year, Award, Where)
+```
+
