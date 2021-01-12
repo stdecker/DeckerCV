@@ -6,146 +6,174 @@ I used the `vitae` package and R version 4
 ---
 name: Stephen
 surname: Decker
-profilepic:
-position: "Ph.D. Candidate"
+position: "MS, CEP"
 address: "Dalton, Massachusetts"
 phone: "(713) 452-9516"
-www: 
-email: "DeckerStephenT@gmail.com"
+email: "stdecker@umass.edu"
 twitter: decker_st
 github: stdecker
 linkedin: deckerst
-date: "`r format(Sys.time(), '%B %Y')`"
-aboutme: "A 4th year Ph.D. Candidate at the University of Massachusetts Amherst with experiences in teaching undergraduate courses in health-related disciplines, CPR/First Aid and Lifeguarding, and providing exercise programs to high-risk individuals in healthcare and recreational settings."
-output: vitae::awesomecv
+date: "Updated `r format(Sys.time(), '%B %Y')` using R version `r getRversion()`"
+headcolor: 000088
+linkcolor: 000088
+aboutme: "Ph.D. Candidate interested in understanding the integrative physiology of lifestyle-related disease (Type II Diabetes, COPD, PAD, etc.), with expertise in assessing both vascular and skeletal muscle function. Seeking Post Doctoral Research positions that expose new techniques including, but not limited to, Mass Spectometry, Immunohistochemistry, Microdialysis, and NIRS. Relevant laboratory proficiencies include collection and analysis of ^31^P-MRS data (CSIAPO & jMRUI), High-Resolution Respirometry, H~2~O~2~ Production, and Mitochondrial Membrane Potential (Oroboros Oxygraph O2K) in permeabilized skeletal and cardiac muscle fiber bundles, assessment of in-vivo vascular function via Doppler Ultrasound (GE & Phillips) and continuous non-invasive arterial pressure (CNAP; CNSystems), body composition analysis via DEXA (GE & Hologic), high-resolution peripheral quantitative CT (XtremeCT II) exercise testing (ParvoMedics, Biodex, Quinton Q-Stress), and phlebotomy. Experience analyzing data using R, OriginPro, & GraphPad Prism."
+output: vitae::hyndman
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
-library(dplyr)
 ```
 
-# About Me
-
- * Certified Clinical Exercise Physiologist (CEP), Exercise Physiologist (EP-C), and Exercise is Medicine Level 3 Credential through the American College of Sports Medicine. Certified Basic Life Support Provider through the American Heart Association.
- * Fourth year Ph.D. Candidate in the Department of Kinesiology at the University of Massachusetts Amherst studying the relationship between oxygen delivery, skeletal muscle oxidative metabolism, and the role of reactive oxygen species in health and disease.
- * Experienced in teaching undergraduate courses in health-related disciplines (4 years), instructing CPR/First Aid and Lifeguarding (5+ years), and providing exercise programs to low- and high-risk individuals in healthcare and recreational settings (4+ years).
- * Led exercise testing, evaluation, and behavioral intervention programs for high-risk individuals with cardiovascular, metabolic, pulmonary, and musculoskeletal ailments in research and clinical settings.
- * Facilitated student learning, leadership development, and student engagement through providing instructional support and resources to promote student success.
-
-
-# Education
+# Academic Training
 
 ```{r}
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Details,
-  "Ph.D. in Kinesiology", "Expected 2022","University of Massachusetts Amherst",  "Amherst, Massachusetts", "Tenative Dissertation Project: The Role of Sirtuins in Cigarette Smoke-Induced Skeletal Muscle Dysunction",
-  "Ph.D in Nutrition and Integrative Physiology", "Not Completed", "University of Utah", "Salt Lake City, Utah", "Transfered to the University of Massachusetts Amherst to continue studies with mentor Gwenael Layec", 
-  "M.S. in Kinesiology", "August 2016", "Stephen F. Austin State University", "Nacogdoches, Texas", "Thesis Project: Effects of High-Intensity Interval Training on Postprandial Lipemia and Glycemia",
-  "B.S. in Kinesiology", "May 2014", "Stephen F. Austin State University", "Nacogdoches, Texas", "Graduated with Honors, Cum Laude", 
+  "Doctor of Philosophy,  Kinesiology", "Exp. Feb 2022","University of Massachusetts Amherst",  "Amherst, Massachusetts", "Primary Mentor: Gwenael Layec, Ph.D. \\href{https://pubmed.ncbi.nlm.nih.gov/?term=Layec+G}{[PubMed]}",
+  "Doctor of Philosophy,  Kinesiology", "Exp. Feb 2022","University of Massachusetts Amherst",  "Amherst, Massachusetts", "Dissertation Project: The Role of Sirtuins in Cigarette Smoke-Induced Skeletal Muscle Dysfunction", 
+  "Doctor of Philosophy, Nutrition and Integrative Physiology", "Jul 2017-Aug 2018", "University of Utah", "Salt Lake City, Utah", "Primary Mentor: Gwenael Layec, Ph.D.", 
+  "Doctor of Philosophy, Nutrition and Integrative Physiology", "Jul 2017-Aug 2018", "University of Utah", "Salt Lake City, Utah", "Transferred to University of Massachusetts Amherst",
+  "Research Clinical Exercise Physiologist", "May 2016-Jul 2017", "Baylor College of Medicine", "Houston, Texas", "Primary Supervisor: Dennis T Villareal, MD \\href{https://pubmed.ncbi.nlm.nih.gov/?term=Villareal+DT&cauthor_id=26892583}{[PubMed]}",
+  "Master of Science, Kinesiology", "Aug 2016", "Stephen F. Austin State University", "Nacogdoches, Texas", "Primary Mentor: James Rowe, Ph.D.",
+  "Master of Science, Kinesiology", "Aug 2016", "Stephen F. Austin State University", "Nacogdoches, Texas", "Thesis Project: Effects of High-Intensity Interval Training on Postprandial Lipemia and Glycemia",
+  "Bachelor of Science, Kinesiology", "May 2014", "Stephen F. Austin State University", "Nacogdoches, Texas", "Graduated with Honors, Cum Laude", 
 ) %>% 
-  detailed_entries(Institution, Year, Degree, Where, Details)
+  detailed_entries(Degree, Year, Where, Institution, Details, .protect = FALSE)
 ```
 
-# Relevant Experience
+# Publications
+## Peer-Reviewed
+- Li, X, Conlin, CC, **Decker, ST**, Hu, N, Mueller, M, Khor, L, Hanrahan, C, Layec, G, Lee, VS, Zhang, JL (2019),  
+Sampling Arterial Input Function (AIF) from Peripheral Arteries: Comparison of a Temporospatial-feature Based Method Against Conventional Manual Method, *Magnetic Resonance Imaging*, [[PubMed](https://pubmed.ncbi.nlm.nih.gov/30471329/)]
 
+## In Development
+
+- **Decker, ST**, Kwon, OS, Zhao, J, Hoidal, JR, Hueckstadt, T, Sanders, KA, Layec, G (Under Revision in the *American*   
+*Journal of Physiology Endocrinology & Metabolism*), Skeletal muscle Mitochondrial Adaptations Induced by Long-term Cigarette Smoke Exposure
+
+- **Decker, ST**, Kwon, OS, Zhao, J, Hoidal, JR, Hueckstadt, T, Sanders, KA, Layec, G (In Preparation), The Receptor for Advanced Glycation End Products (RAGE) Mediates Cigarette Smoke-Induced Skeletal Muscle Adaptations in C57BL/6 Mice
+
+- Matias, AA, Thurston, T, **Decker, ST**, Hart, CH, Zhao, J, Le Fur, Y, Jeong, EK, Trinity, JD, Kwon, OS, Layec, G   
+(In Preparation), Central and Peripheral Cardiovascular (CV) Response to Submaximal Plantar Flexion Exercise in Chronic Obstructive Pulmonary Disease (COPD)
+
+- Matias, AA, **Decker, ST**, Nagarajan, R, Le Fur, Y, Layec, G (In Preparation), Phosphorus Magnetic Resonance   
+Spectroscopy (^31^P-MRS) of Alkaline Inorganic Phosphate (Pialk) in Young, Sedentary Adults: A Reproducibility Study
+
+## Selected Posters & Abstracts
+
+-   **Decker, ST**, et al. (2020), Oxidative Stress Induced By Long-Term Cigarette Smoke Exposure Does Not Alter  
+  Mitochondrial Respiration in Skeletal Muscle of C57BL6 Mice, *Keystone Symposium: New Insights into the*   
+  *Biology of Exercise (Keystone, CO)*
+
+-   **Decker, ST**, et al. (2019), Knockout of the Receptor for Advanced Glycation End Products (RAGE) Increases Skeletal Muscle Mitochondria Content and Alters Mitochondrial Function, *Muscle Biology Conference (Gainesville, FL)*
+
+-   Layec, G, Conlin, C, Dong, J, **Decker, ST**, et al. (2018), Assessment of Perfusion-metabolism matching in  
+exercising muscle from dynamic contrast-enhanced MRI and T2 mapping, *International Society for Magnetic*  
+  *Resonance in Medicine (Paris, FR)*
+
+- Conlin, C, Dong, J, **Decker ST**, et al, 2018, Reproducibility of calf-muscle perfusion measurements from dynamic contrast-enhanced MRI, *International Society for Magnetic Resonance in Medicine (Paris, FR)*
+
+-   **Decker, ST**, et al. 2018, Effects of Tetrahydrobiopterin on Limb Blood Flow and Muscle Metabolism in Patients with COPD, *American College of Sports Medicine Annual Meeting (Minneapolis, MN)*
+
+- **Decker, ST**, Rowe, J, 2017 Effects of Acute Exercise on Postprandial Lipemia and Postprandial Glycemia, *Texas*  
+*American College of Sports Medicine Regional Conference (Waco, TX)*
+
+# Oral Presentations
 
 ```{r}
 tribble(
-  ~ Year, ~ Position, ~ Institution, ~ Where,
-  "August 2018-Present", "Graduate Teaching and Research Assistant", "University of Massachusetts Amherst", "Amherst, Massachusetts",
+  ~ Year, ~ Title, ~ Institution, ~ Where,
+  "Nov 2019", "The Physiological Role of Sirtuins: A Target for Aging or More Hype?", "UMass Amherst Department of Kinesiology", "",
+  "May 2019", "Effects of Tetrahydrobiopterin on Limb Blood Flow and Muscle Metabolism in Patients with COPD", "International Society for Magnetic Resonance in Medicine - Montreal, Quebec", ""
 ) %>% 
-  detailed_entries(Institution, Year, Position, Where)
+  detailed_entries(Title, Year, Where, Institution)
 ```
 
-* Led several research projects, including my own dissertation, focusing on assessing vascular function (using Doppler ultrasound) and skeletal muscle metabolism (using ^31^Phosphorus-Magnetic Resonance Spectroscopy and High-Resolution Respirometry).
-* Developed graduate and undergraduate lab members' techniques and fundamental theories surrounding common laboratory techniques.
-* Facilitated discussion and lab courses for the Department of Kinesiology including Advanced Exercise Physiology, Anatomy & Physiology, and Human Performance & Nutrition.
-* Communicated research findings by presenting an oral presentations at the international conferences, department seminars, and poster presentations (see below).
 
-\pagebreak
+# Funding
+```{r}
+tribble(
+  ~ Year, ~ Award, ~ Institution, ~ Amount,
+  "Mar 2020", "Research Travel Award Recipient", "UMass Amherst Department of Kinesiology", "Awarded $500",
+  "Jun 2019", "Predoctoral Fellowship", "American Heart Association", "Not Funded",
+  "May 2019", "Trainee Stipend Award Recipient", "International Society for Magnetic Resonance in Medicine","Awarded $200 & Conference Registration",
+  "Mar 2016", "Student Research Development Award Recipient", "Texas American College of Sports Medicine"," Awarded $500",
+) %>% 
+  detailed_entries(Award, Year, Amount, Institution)
+```
+
+
+# Honors & Awards
+```{r}
+tribble(
+  ~ Year, ~ Award, ~ Institution, ~ Amount,
+  "Feb 2017", "Student Research Poster Finalist - Masters Category", "Texas American College of Sports Medicine","",
+  "Feb 2014", "SFASU Undergraduate Research Conference Top Scholar", "Stephen F. Austin State University School of Honors","",
+) %>% 
+  detailed_entries(Award, Year, Amount, Institution)
+```
+
+
+# Teaching Experience
+\* Denotes Graduate-level Class
+
+## Instructor of Record
+```{r}
+tribble(
+  ~ Semester, ~ Where, ~ Course, ~ Blank,
+  "Fall 2015 & Spring 2016", "Stephen F. Austin State University", "KIN 100 - Physical Fitness Concepts and Activities", "", 
+  "Spring 2015", "Stephen F. Austin State University", "KIN 120 - Foundations of Kinesiology", "", 
+  "Fall 2014", "Stephen F. Austin State University", "KIN 200 - Fitness Activites for Life", "", 
+) %>% 
+  detailed_entries(Course, Semester, Blank, Where)
+```
+
+
+## Teaching Assistant
+
+```{r}
+tribble(
+  ~ Semester, ~ Where, ~ Course, ~ Blank,
+  "Spring 2021", "University of Massachusetts Amherst", "KIN 470 - Exercise Physiology", "", 
+  "Fall 2020", "University of Massachusetts Amherst", "KIN 270 - Anatomy & Physiology I", "",
+  "Fall 2019", "University of Massachusetts Amherst", "*KIN 570 - Advanced Exercise Physiology", "", 
+  "Fall 2018 & Spring 2019", "University of Massachusetts Amherst", "KIN 110 - Human Performance and Nutrition", "",
+  "Fall 2015 & Spring 2016", "Stephen F. Austin State University", "KIN 417 - Analysis of Movement Lab", ""
+) %>% 
+  detailed_entries(Course, Semester, Blank, Where)
+```
+
+
+# Professional Development and Training
+
+```{r}
+tribble(
+  ~Year, ~Institution, ~Title, ~Location, ~Desc,
+  "Jun 2019", "Oroboros Instruments", "", "Schröcken, Austria", "Oroboros O2k-Workshop on High-Resolution Respirometry (HRR)",
+  "Ongoing", "A Guide for the Analysis of High-Resolution Respirometry Data Using R", "Creator", "Amherst, Massachusetts", "In Development - Version 2 Available on GitHub",
+  "Current", "American College of Sports Medicine", "Member", "Indianapolis, Indiana", "Certified Clinical Exercise Physiologist",
+  "Current", "American College of Sports Medicine", "Member", "Indianapolis, Indiana", "Certified Exercise Physiologist",
+  "Current", "American Physiological Society", "Member", "Rockville, Maryland", "Primary Section: Endocrinology & Metabolism",
+  "Current", "International Society for Magnetic Resonance in Medicine", "Member", "Rockville, Maryland", "Primary Section: MR Spectroscopy",
+) %>% 
+  detailed_entries(Institution, Year, Title, Location, Desc)
+```
+
+# Undergraduate Mentoring
+\* Denotes students who worked on undergraduate honors thesis projects
+```{r}
+tribble(
+  ~Year, ~Name, ~Title, ~Project, ~Desc,
+  "2018-Present", "*Jyotika Vallurupalli", "", "Undergraduate Honors Thesis: TBD", "Trained the assessment of vascular function using Doppler Ultrasound and continuous non-invasive arterial pressure",
+  "2019-Present", "John Madden", "", "", "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K",
+  "2018-2020", "*Sebastien Rauch", "", "Validity and Specificity of Tetramethylrhodamine, Methyl Ester (TMRM) Dye in Mice Gastrocnemius Muscle Fiber Bundles for Assessing Mitochondrial Membrane Potential", "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K & assessment of vascular function using Doppler Ultrasound",
+  "2018-2020", "Todd Maniscalchi", "", "", "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K & assessment of vascular function using Doppler Ultrasound",
+  "2018-2020", "Joseph Howard", "", "", "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K",
   
-  
-```{r}
-tribble(
-  ~ Year, ~ Position, ~ Institution, ~ Where,
-  "July 2017-August 2018", "Graduate Research Assistant", "University of Utah Vascular Research Laboratory","Salt Lake City, UT",
+  "2020", "Mia Calderone", "", "", "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K"
 ) %>% 
-  detailed_entries(Institution, Year, Position, Where)
+  detailed_entries(Name, Year, Title, Project, Desc)
+
 ```
-
-* Led several projects focusing on vascular function and oxygen delivery in healthy subjects, and individuals diagnosed with Chronic Obstructive Pulmonary Disease.
-* Collaborated with investigators in the Department of Radiology to develop new methods of assessing skeletal muscle blood flow using Dynamic Contrast Enhanced (DCE) MRI.
-
-
-```{r}
-tribble(
-  ~ Year, ~ Position, ~ Institution, ~ Where,
-  "May 2016 - July 2017", "Clinical Exercise Physiologist", "Baylor College of Medicine","Houston, TX", 
-) %>% 
-  detailed_entries(Institution, Year, Position, Where)
-```
-* Designed and implemented weight loss and exercise programs for individuals with cardiovascular, musculoskeletal, metabolic, pulmonary, and neurological conditions.
-* Worked with a team to deliver weight loss and exercise interventions to middle-aged and elderly adults with and without chronic ailments.
-* Conducted and assessed cardiovascular (EKG stress tests) fitness, muscular exercise performance (BIODEX), and activities of daily living, and used these measures to build safe and effective exercise regimens.
-
-
-
-```{r}
-tribble(
-  ~ Year, ~ Position, ~ Institution, ~ Where,
-  "August 2014 - May 2016", "Graduate Teaching Assistant", "Stephen F. Austin State University","Nacogdoches, TX",
-) %>% 
-  detailed_entries(Institution, Year, Position, Where)
-```
-
-* Created and delivered course content, as an instructor of record, for undergraduate-level courses.
-* Instructed students on using visualization software to assess human motion in the Biomechanics Lab course.
-
-```{r}
-tribble(
-  ~ Year, ~ Position, ~ Institution, ~ Where,
-  "May 2015 - September 2015", "Pool Manager (Seasonal)", "City of Pasadena, Texas","Pasadena, TX",
-) %>% 
-  detailed_entries(Institution, Year, Position, Where)
-```
-
-* Oversaw pool operations at several aquatics facilities, including maintaining a safe and welcoming recreational experience for pool patrons and guests.
-* Trained and instructed lifeguards, and led regular in-service training.
-
-```{r}
-tribble(
-  ~ Year, ~ Position, ~ Institution, ~ Where,
-  "January 2014 - October 2014", "Personal Trainer & Head Lifeguard", "Stephen F. Austin State University Recreation Center","Nacogdoches, TX",
-) %>% 
-  detailed_entries(Institution, Year, Position, Where)
-```
-
-* Conducted exercise testing, evaluation, and programming for several personal training clients.
-* Led and conducted lifeguard training and managed pool operations.
-
-# Presentations
-```{r}
-tribble(
-  ~ Year, ~ Award, ~ Institution, ~ Where,
-  "November 2019", "The Physiological Role of Sirtuins: A Target for Aging or More Hype?", "University of Massachusetts Department of Kinesiology","Amherst, MA",
-  "May 2019", "Effects of Tetrahydrobiopterin on Limb Blood Flow and Muscle Metabolism in Patients with COPD", "International Society for Magnetic Resonance in Medicine","Montreal, QC",
-) %>% 
-  detailed_entries(Institution, Year, Award, Where)
-```
-
-
-# Honors
-```{r}
-tribble(
-  ~ Year, ~ Award, ~ Institution, ~ Where,
-  "May 2019", "Trainee Stipent Award Recipient", "International Society for Magnetic Resonance in Medicine","Montreal, QC",
-  "February 2017", "Student Research Poster Finalist (MS)", "Texas American College of Sports Medicine","Waco, TX",
-  "March 2016", "Student Research Development Award Recipient", "Texas American College of Sports Medicine","College Station, TX",
-  "February 2014", "SFASU Undergraduate Research Conference Top Scholar", "Stephen F. Austin State University School of Honors","Nacogdoches, TX",
-) %>% 
-  detailed_entries(Institution, Year, Award, Where)
-```
-
