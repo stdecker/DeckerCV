@@ -86,7 +86,7 @@ Links & Resources {#about}
 
 Skills {#skills}
 --------------------------------------------------------------------------------
-## See Nick Strayer's work for this function
+
 ```{r}
 build_skill_bars(skills)
 ```
@@ -123,8 +123,11 @@ position_data %>% print_section('education')
 ```
 
 
+
+
 Publications {data-icon=file}
 --------------------------------------------------------------------------------
+
 
 ### Skeletal muscle Mitochondrial Adaptations Induced by Long-term Cigarette Smoke Exposure
 
@@ -177,7 +180,7 @@ Oral Presentations {data-icon=comment-dots}
 
 ### The Physiological Role of Sirtuins: A Target for Aging or More Hype?
 
-UMass Amherst Department of Kinesiology
+University of Amherst Department of Kinesiology
 
 Amherst, Massachusetts
 
@@ -232,9 +235,17 @@ Waco, Texas
 Funding {data-icon=dollar-sign}
 --------------------------------------------------------------------------------
 
+::: aside
+
+#### Teaching Philosophy
+
+I am very enthusiastic about sharing knowledge and teaching. I believe it is important to acknowledge the numerous ways in which students learn, and how past personal experiences shape each student's worldview and the learning process. Therefore, learning must be a journey that is tailored to students' needs. I aim to bring an open mind and high expectations to the classroom, where I aspire to create an inclusive and welcoming environment that also encourages students to achieve higher learning outcomes. 
+
+:::
+
 ### Research Travel Award Recipient
 
-UMass Amherst Department of Kinesiology
+University of Amherst Department of Kinesiology
 
 N/A
 
@@ -273,31 +284,13 @@ N/A
 Awarded $500
 
 
-Honors and Awards {data-icon=award}
---------------------------------------------------------------------------------
-
-### Student Research Poster Finalist - Masters Category
-
-Texas American College of Sports Medicine
-
-Waco, Texas
-
-2017
-
-### Undergraduate Research Conference Top Scholar
-
-Stephen F. Austin State University School of Honors
-
-Nacogdoches, Texas
-
-2014
-
 
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
-### KIN 272 - Anatatomy and Physiology II (Instructor of Record)
+
+### KIN 272 - Anatomy and Physiology II (Instructor of Record)
 
 University of Massachusetts Amherst
 
@@ -306,6 +299,8 @@ Amherst, Massachusetts
 2021
 
 Instructed 1 section of A&P II to over 20 undergraduate students with the goal of understanding human anatomy and physiology and applying that understanding to career goals and real-life case studies.
+
+
 
 ### Kin 470 - Exercise Physiology Lab (TA)
 
@@ -317,7 +312,7 @@ Amherst, Massachusetts
 
 Led 2 sections of Exercise Physiology Lab to over 20 upper-level undergraduate students with the goal of advancing student understanding of physiology and applying that understanding to career goals and real-life case studies.
 
-### KIN 270 - Anatatomy and Physiology I Lab (TA)
+### KIN 270 - Anatomy and Physiology I Lab (TA)
 
 University of Massachusetts Amherst
 
@@ -415,39 +410,74 @@ Schröcken, Austria
 
 2019
 
-
-
-
-Undergraduate Trainees {data-icon=users}
+Honors and Awards {data-icon=award}
 --------------------------------------------------------------------------------
 
-### Mia Calderone
 
-Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K and the assessment of vascular function using Doppler Ultrasound
+### Student Research Poster Finalist - Masters Category
+
+Texas American College of Sports Medicine
+
+Waco, Texas
+
+2017
+
+### Undergraduate Research Conference Top Scholar
+
+Stephen F. Austin State University School of Honors
+
+Nacogdoches, Texas
+
+2014
+
+
+Trainees {data-icon=users}
+--------------------------------------------------------------------------------
+
+### Alexs Matias (Graduate)
+
+Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K and the assessment of vascular function using Doppler Ultrasound.
+
+N/A
+
+Present - 2019
+
+### M. Enes Erol (Graduate)
+
+Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K and the assessment of vascular function using Doppler Ultrasound.
 
 N/A
 
 Present - 2020
 
-### Jack Madden
 
-Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K
+### Mia Calderone (Undergraduate)
+
+Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K and the assessment of vascular function using Doppler Ultrasound.
 
 N/A
 
 Present - 2020
 
-### Jyotika Vallurupalli
+### Jack Madden (Undergraduate)
 
-Trained the assessment of vascular function using Doppler Ultrasound and continuous non-invasive arterial pressure
+Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K.
+
+N/A
+
+Present - 2020
+
+### Jyotika Vallurupalli (Undergraduate)
+
+Trained the assessment of vascular function using Doppler Ultrasound and continuous non-invasive arterial pressure.
 
 N/A
 
 2018 - 2021
 
-### Sebastien Rauch
+### Sebastien Rauch (Undergraduate)
 
-**Honors Thesis:** Validity and Specificity of Tetramethylrhodamine, Methyl Ester (TMRM) Dye in Mice Gastrocnemius Muscle Fiber Bundles for Assessing Mitochondrial Membrane Potential
+**Honors Thesis:** Validity and Specificity of Tetramethylrhodamine, Methyl Ester (TMRM) Dye in Mice Gastrocnemius Muscle Fiber Bundles for Assessing Mitochondrial Membrane Potential.
 
 N/A
 
