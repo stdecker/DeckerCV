@@ -1,0 +1,234 @@
+---
+name: Stephen
+surname: Decker
+position: "Ph.D., ACSM-CEP, -EP, -EIM"
+address: "Amherst, Massachusetts"
+phone: "(713) 452-9516"
+email: "stdecker@umass.edu"
+twitter: "decker_st"
+github: "stdecker"
+date: "Updated `r format(Sys.time(), '%B %Y')` using R version `r getRversion()`"
+headcolor: 881C1C
+linkcolor: 000088
+
+output: vitae::hyndman
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Academic & Research Training
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Details,
+  "Postoctoral Scholar", "Starting March 2023", "University of Utah", "Salt Lake City, Utah", "Primary Mentor: Katsu Funai, Ph.D. \\href{https://pubmed.ncbi.nlm.nih.gov/?term=Funai+K&cauthor_id=24009397}{[PubMed]}",
+  "Research Project Manager", "Nov 2022-March 2023", "Institute for Applied Life Sciences - University of Massachusetts Amherst", "Amherst, Massachusetts", "Primary Supervisor: Mike Busa, Ph.D.",
+  "Research Project Manager", "Nov 2022-March 2023", "Institute for Applied Life Sciences - University of Massachusetts Amherst", "Amherst, Massachusetts", "Oversaw insdustry-funded projects involving wearable biosensors",
+  "Research Project Manager", "Nov 2022-March 2023", "Institute for Applied Life Sciences - University of Massachusetts Amherst", "Amherst, Massachusetts", "Assisted in other collaborative projects for the Center for Human Health and Performance",
+  "Doctor of Philosophy,  Kinesiology (Physiology)", "Aug 2018-Nov 2022","University of Massachusetts Amherst",  "Amherst, Massachusetts", "Primary Mentor: Gwenael Layec, Ph.D. \\href{https://pubmed.ncbi.nlm.nih.gov/?term=Layec+G}{[PubMed]}",
+  "Doctor of Philosophy,  Kinesiology (Physiology)", "Aug 2018-Nov 2022","University of Massachusetts Amherst",  "Amherst, Massachusetts", 'Dissertation Project: Mechanisms of Cigarette Smoke-Induced Mitochondrial Dysfunction in Striated Muscle and Aorta', 
+  "Doctor of Philosophy, Nutrition and Integrative Physiology", "Jul 2017-Aug 2018", "University of Utah", "Salt Lake City, Utah", "Primary Mentor: Gwenael Layec, Ph.D.", 
+  "Doctor of Philosophy, Nutrition and Integrative Physiology", "Jul 2017-Aug 2018", "University of Utah", "Salt Lake City, Utah", "Transferred to University of Massachusetts Amherst",
+  "Research Clinical Exercise Physiologist", "May 2016-Jul 2017", "Baylor College of Medicine", "Houston, Texas", "Primary Supervisor: Dennis T Villareal, MD \\href{https://pubmed.ncbi.nlm.nih.gov/?term=Villareal+DT&cauthor_id=26892583}{[PubMed]}",
+  "Research Clinical Exercise Physiologist", "May 2016-Jul 2017", "Baylor College of Medicine", "Houston, Texas", "Prepared and administered exercise testing and prescription for high-risk older adults involved in various clinical research trials",
+  "Master of Science, Kinesiology", "Aug 2016", "Stephen F. Austin State University", "Nacogdoches, Texas", "Primary Mentor: James Rowe, Ph.D.",
+  "Master of Science, Kinesiology", "Aug 2016", "Stephen F. Austin State University", "Nacogdoches, Texas", "Thesis Project: Effects of High-Intensity Interval Training on Postprandial Lipemia and Glycemia",
+  "Bachelor of Science, Kinesiology", "May 2014", "Stephen F. Austin State University", "Nacogdoches, Texas", "Graduated with Honors, Cum Laude", 
+) %>% 
+  detailed_entries(Degree, Year, Where, Institution, Details, .protect = FALSE)
+```
+
+# Publications
+
+## In Press
+
+### As First Author
+
+1. **Decker, ST**, Matias, AA, Bannon, ST, Madden, JP, Alexandrou-Majaj, N, Layec, G (2023),\
+Effects of Cigarette Smoke on *In Situ* Mitochondrial Substrate Oxidation of Slow- and Fast-Twitch Skeletal Muscles, *Life Sciences* 
+
+1. Kwon, OS, **Decker, ST**,  Zhao, J, Hoidal, JR, Hueckstadt, T, Sanders KA, Richardson, RS, Layec, G (2022),\
+The Receptor for Advanced Glycation End Products (RAGE) is involved in Mitochondrial Function and Cigarette Smoke-Induced Oxidative Stress, *Free Radical Biology & Medicine* [[PubMed](https://pubmed.ncbi.nlm.nih.gov/36586455/)]
+
+1. **Decker, ST**, Kwon, OS, Zhao, J, Hoidal, JR, Hueckstadt, T, Sanders, KA, Richardson, RS, Layec, G (2021),\
+  Skeletal muscle Mitochondrial Adaptations Induced by Long-term Cigarette Smoke Exposure, *American Journal of Physiology Endocrinology & Metabolism* [[PubMed](https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC8321829/)]
+
+### As Co-author
+
+4. Serviente, C, **Decker, ST**, Layec, G (2022), From heart to muscle: pathophysiological mechanisms underlying long-term physical sequelae from SARS-CoV-2 infection,
+  *Journal of Applied Physiology*, [[PubMed](https://pubmed.ncbi.nlm.nih.gov/35019775/)]
+  
+4. Li, X, Conlin, CC, **Decker, ST**, Hu, N, Mueller, M, Khor, L, Hanrahan, C, Layec, G, Lee, VS, Zhang, JL (2019),\
+    Sampling Arterial Input Function (AIF) from Peripheral Arteries: Comparison of a Temporospatial-feature Based Method Against Conventional Manual Method, *Magnetic Resonance Imaging* [[PubMed](https://pubmed.ncbi.nlm.nih.gov/30471329/)]\
+
+
+## Under Review
+
+1. **Decker, ST**, Alexandrou-Majaj, N, Layec, G, Effects of Acute Cigarette Smoke Exposure on Mitochondrial Energy Transfer in Fast and Slow Twitch Skeletal Muscle, Under Review in *Biochimica et Biophysica Acta - Bioenergetics* since Dec. 2022
+
+
+## In Preparation
+
+1. **Decker, ST**, Matias, AA, Cuadra, AE, Erol, ME, Serviente, C, Fenelon, K, Layec, G\
+Tissue Specificity of Mitochondrial Toxicity Induced by Cigarette Smoke in Striated Muscles and Aorta
+
+1. **Decker, ST**, Bannon, ST, Huang, T, Erol, ME, Layec, G\
+Effects of Acute Cigarette Smoke Exposure on Simultaneous Measurements of Mitochondrial Oxygen Consumption and ROS Production *In Situ*
+
+1. **Decker, ST**, Matias, AA, Bannon, ST, Madden, JP, Erol, ME, Chipkin, S, Kent, JA, Miller, M, Layec, G\
+Effects of Sedentary Time on *In Situ* Mitochondrial Substrate Oxidation Across the Human Lifespan
+
+1. Matias, AA, Serviente, C, **Decker, ST**, Erol, ME, Giuriato, G, Nagarajan, R, Le Fur, Y, Layec, G,\
+^31^P-MRS of Alkaline Inorganic Phosphate in Young, Sedentary Adults: A Reproducibility Study
+
+1. Matias, AA, Thurston, T, **Decker, ST**, Hart, CH, Zhao, J, Le Fur, Y, Jeong, EK, Trinity, JD, Kwon, OS, Layec, G,\
+Central and Peripheral Cardiovascular Responses to Submaximal Plantar Flexion Exercise in Patients with COPD
+
+
+
+## Selected Posters & Abstracts
+
+1.   **Decker, ST**, et al. (2022), Effects of Cigarette Smoke on *In Situ* Mitochondrial Substrate Oxidation on Slow- and Fast-Twitch Skeletal Muscles, *Institute of Applied Life Sciences Core Showcase (Amherst, MA)*\
+
+1.   **Decker, ST**, et al. (2020), Oxidative Stress Induced By Long-Term Cigarette Smoke Exposure Does Not Alter\
+    Mitochondrial Respiration in Skeletal Muscle of C57BL6 Mice, *Keystone Symposium: New Insights into the*\
+    *Biology of Exercise (Keystone, CO)*\
+
+1.   **Decker, ST**, et al. (2019), Knockout of the Receptor for Advanced Glycation End Products (RAGE) Increases Skeletal Muscle Mitochondria Content and Alters Mitochondrial Function, *Muscle Biology Conference (Gainesville, FL)*\
+
+1.   Layec, G, Conlin, C, Dong, J, **Decker, ST**, et al. (2018), Assessment of Perfusion-metabolism matching in\
+    exercising muscle from dynamic contrast-enhanced MRI and T2 mapping, *International Society for Magnetic*\
+    *Resonance in Medicine (Paris, FR)*\
+
+1.   Conlin, C, Dong, J, **Decker ST**, et al, 2018, Reproducibility of calf-muscle perfusion measurements from dynamic contrast-enhanced MRI, *International Society for Magnetic Resonance in Medicine (Paris, FR)*\
+
+1.   **Decker, ST**, et al. 2018, Effects of Tetrahydrobiopterin on Limb Blood Flow and Muscle Metabolism in Patients with COPD, *American College of Sports Medicine Annual Meeting (Minneapolis, MN)*\
+
+1.   **Decker, ST**, Rowe, J, 2017 Effects of Acute Exercise on Postprandial Lipemia and Postprandial Glycemia, *Texas*\
+    *American College of Sports Medicine Regional Conference (Waco, TX)*\
+
+# Oral Presentations
+
+```{r}
+tribble(
+  ~ Year, ~ Title, ~ Institution, ~ Where,
+  "Nov 2021", "Connecting the Dots of the Power Grid: Assessing mitochondrial membrane potential and ADP/ATP translocase activity in permeabilized skeletal muscle fiber bundles", "University of Massachusetts Amherst Department of Kinesiology", "",
+  "Nov 2019", "The Physiological Role of Sirtuins: A Target for Aging or More Hype?", "University of Massachusetts Amherst Department of Kinesiology", "",
+  "May 2019", "Effects of Tetrahydrobiopterin on Limb Blood Flow and Muscle Metabolism in Patients with COPD", "International Society for Magnetic Resonance in Medicine - Montreal, Quebec", ""
+) %>% 
+  detailed_entries(Title, Year, Where, Institution)
+```
+
+# Funding
+
+```{r}
+tribble(
+  ~ Year, ~ Award, ~ Institution, ~ Amount,
+  "Dec 2022", "T32 Fellowship", "University of Utah Diabetes and Metabolism Research Center", "Submitted",
+  "Mar 2020", "Research Travel Award Recipient", "UMass Amherst Department of Kinesiology", "Awarded $500",
+  "Jun 2019", "Predoctoral Fellowship", "American Heart Association", "Not Funded",
+  "May 2019", "Trainee Stipend Award Recipient", "International Society for Magnetic Resonance in Medicine","Awarded $200 & Conference Registration",
+  "Mar 2016", "Student Research Development Award Recipient", "Texas American College of Sports Medicine"," Awarded $500",
+) %>% 
+  detailed_entries(Award, Year, Amount, Institution)
+```
+
+# Honors & Awards
+
+```{r}
+tribble(
+  ~ Year, ~ Award, ~ Institution, ~ Amount,
+  "Feb 2017", "Student Research Poster Finalist - Masters Category", "Texas American College of Sports Medicine","",
+  "Feb 2014", "SFASU Undergraduate Research Conference Top Scholar", "Stephen F. Austin State University School of Honors","",
+) %>% 
+  detailed_entries(Award, Year, Amount, Institution)
+```
+
+
+# Professional Development and Training
+
+```{r}
+tribble(
+  ~Year, ~Institution, ~Title, ~Location, ~Desc,
+  "Current", "American College of Sports Medicine", "Indianapolis, Indiana", "Member", "Certified Clinical Exercise Physiologist",
+  "Current", "American College of Sports Medicine", "Indianapolis, Indiana", "Member", "Certified Exercise Physiologist",
+  "Current", "American College of Sports Medicine", "Indianapolis, Indiana", "Member", "Exercise is Medicine Credential Level 3",
+  "Current", "American Physiological Society", "Rockville, Maryland", "Member", NA,
+  "Current", "International Society for Magnetic Resonance in Medicine", "Concord, California", "Member", NA,
+  "Jun 2019", "Oroboros O2k-Workshop on High-Resolution Respirometry (HRR)", "Schröcken, Austria", "Oroboros Instruments", NA
+) %>% 
+  detailed_entries(Institution, Year, Title, Location, Desc)
+```
+
+# Mentoring
+
+## Graduate
+
+```{r}
+tribble(
+  ~Year, ~Name, ~Title, ~Project, ~Desc,
+  "2020-2023", "M Enes Erol", NA, "Currently pursuing a PhD at the University of Massachusetts Amherst", "Trained on mitochondrial respiration, Doppler ultrasound, phlebotomy, spectrophotometry, MR spectroscopy, and other lab techniques",
+  "2020-2023", "M Enes Erol", NA, "Currently pursuing a PhD at the University of Massachusetts Amherst", "Mentored in statistical and data analysis, principles of human pysiology, and scientific writing",
+  "2019-2022", "Alexs Matias", NA, "Currently pursuing a PhD at the University of Delaware", "Trained on mitochondrial respiration, Doppler ultrasound, phlebotomy, and MR spectroscopy",
+  "2019-2022", "Alexs Matias", NA, "Currently pursuing a PhD at the University of Delaware", "Mentored in statistical and data analysis and principles of human pysiology"
+) %>% 
+  detailed_entries(Name, Year, Title, Project, Desc)
+```
+
+
+## Undergraduate 
+
+\* Denotes students who worked on undergraduate honors thesis projects
+
+```{r}
+tribble(
+  ~Year, ~Name, ~Title, ~Project, ~Desc,
+  "2022-Present", "Tiana Huang", NA, "Undergraduate Honors Thesis: TBD", "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K",
+  "2021-Present", "*Sean Bannon", NA, "Undergraduate Honors Thesis: MitoTEMPO Restores Mitochondrial Function Following Acute Cigarette Smoke Exposure", "Currently serving on honors thesis committee",
+  "2021-Present", "*Sean Bannon", NA, "Undergraduate Honors Thesis: MitoTEMPO Restores Mitochondrial Function Following Acute Cigarette Smoke Exposure", "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K",
+  "2021-Present", "William Callahan", NA, NA, "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K",
+  "2020-2022", "*Mia Calderone", NA, "Undergraduate Honors Thesis: Effects of Heat Therapy on Cardiovascular and Muscular Health in Long-Haul COVID-19 Patients", "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K",
+  "2019-2022", "John Madden", NA, NA, "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K",
+  "2018-2020", "*Jyotika Vallurupalli", "", "Undergraduate Honors Thesis: Investigating the Roles of COVID-19 on Vascular Funciton", "Trained the assessment of vascular function using Doppler Ultrasound and continuous non-invasive arterial pressure",
+  "2018-2020", "*Sebastien Rauch", "", "Undergraduate Honors Thesis: Validity and Specificity of Tetramethylrhodamine, Methyl Ester (TMRM) Dye in Mice Gastrocnemius Muscle Fiber Bundles for Assessing Mitochondrial Membrane Potential", "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K & assessment of vascular function using Doppler Ultrasound",
+  "2018-2020", "Todd Maniscalchi", "", "", "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K & assessment of vascular function using Doppler Ultrasound",
+  "2018-2020", "Joseph Howard", "", "", "Trained how to collect skeletal muscle mitochondrial respiration data using the Oxygraph O2K"
+) %>% 
+  detailed_entries(Name, Year, Title, Project, Desc)
+
+```
+
+# Teaching Experience
+
+\* Denotes Graduate-level Class
+
+## Instructor of Record
+
+```{r}
+tribble(
+  ~ Semester, ~ Where, ~ Course, ~ Blank,
+  "Summer 2021", "University of Massachusetts Amherst", "KIN 272 - Anatomy & Physiology II", "",
+  "Fall 2015 & Spring 2016", "Stephen F. Austin State University", "KIN 100 - Physical Fitness Concepts and Activities", "", 
+  "Spring 2015", "Stephen F. Austin State University", "KIN 120 - Foundations of Kinesiology", "", 
+  "Fall 2014", "Stephen F. Austin State University", "KIN 200 - Fitness Activites for Life", "", 
+) %>% 
+  detailed_entries(Course, Semester, Blank, Where)
+```
+
+## Teaching Assistant
+
+```{r}
+tribble(
+  ~ Semester, ~ Where, ~ Course, ~ Blank,
+  "Spring 2021 & 2022", "University of Massachusetts Amherst", "KIN 470 - Exercise Physiology", "", 
+  "Fall 2020", "University of Massachusetts Amherst", "KIN 270 - Anatomy & Physiology I", "",
+  "Fall 2019", "University of Massachusetts Amherst", "*KIN 570 - Advanced Exercise Physiology", "", 
+  "Fall 2018 & Spring 2019", "University of Massachusetts Amherst", "KIN 110 - Human Performance and Nutrition", "",
+  "Fall 2015 & Spring 2016", "Stephen F. Austin State University", "KIN 417 - Analysis of Movement Lab", ""
+) %>% 
+  detailed_entries(Course, Semester, Blank, Where)
+```
