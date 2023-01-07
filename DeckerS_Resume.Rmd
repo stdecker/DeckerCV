@@ -1,0 +1,165 @@
+---
+title: "Stephen Decker's CV"
+author: Stephen Decker
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    css: ['dd_cv.css', 'resume']
+    self_contained: true
+# uncomment this line to produce HTML and PDF in RStudio:
+#knit: pagedown::chrome_print
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(tidyverse)
+library(glue)
+# ======================================================================
+# These variables determine how the the data is loaded and how the exports are
+# done.
+# Is data stored in google sheets? If no data will be gather from the csvs/
+# folder in project
+using_googlesheets <- TRUE
+# Just the copied URL from the sheet
+positions_sheet_loc <- "https://docs.google.com/spreadsheets/d/1MY5JRFv3pKLZCtqM3EmfsobBgSVt6v3PhFtv0U-JKQU/edit#gid=1730172225"
+# Is this sheet available for anyone to read? If you're using a private sheet
+# set this to false and go to gather_data.R and run the data loading manually
+# once to cache authentication
+sheet_is_publicly_readable <- TRUE
+# Is the goal of this knit to build a document that is exported to PDF? If so
+# set this to true to have links turned into footnotes at the end of the
+# document
+PDF_EXPORT <- FALSE
+# A global (gasp) variable that holds all the links that were inserted for
+# placement at the end
+links <- c()
+# ======================================================================
+# Now we source two external scripts. One contains functions for building the
+# text output and the other loads up our data from either googlesheets or csvs
+# Functions for building sections from CSV data
+source('parsing_functions.R') 
+# Load data for CV/Resume
+source('gather_data.R')
+# Now we just need to filter down the position data to include less verbose
+# categories and only the entries we have designated for the resume
+position_data <- position_data %>% 
+  filter(in_resume) %>% 
+  mutate(
+    # Build some custom sections by collapsing others
+    section = case_when(
+      section %in% c('research_positions', 'industry_positions') ~ 'positions', 
+      section %in% c('data_science_writings', 'by_me_press') ~ 'writings',
+      TRUE ~ section
+    )
+  ) 
+```
+
+# Aside
+
+## Connect with Me {#contact}
+
+-   <i class="fa fa-envelope"></i>
+    [decker.stephen.t\@gmail.com](mailto:decker.stephen.t@gmail.com){.email}
+-   <i class="fa fa-phone"></i> (713) 452-9516
+-   <i class="fa fa-twitter"></i>
+    \@[decker_st](https://twitter.com/decker_st)
+
+## Links & Resources {#about}
+
+-   <i class="fa fa-file"></i>
+    [PubMed](https://pubmed.ncbi.nlm.nih.gov/?sort=date&term=Decker+ST&cauthor_id=30471329)
+-   <i class="fa fa-linkedin"></i>
+    [LinkedIn](https://www.linkedin.com/in/deckerst/)
+-   <i class="fab fa-researchgate"></i>
+    [ResearchGate](https://www.researchgate.net/profile/Stephen-Decker-3)
+-   <i class="fa fa-github"></i> [Github](https://github.com/stdecker)
+-   <i class="fa fa-medium"></i> [Medium](https://medium.com/@decker_st)
+
+## Selected Skills {#skills}
+
+```{r}
+build_skill_bars(professional_skills)
+```
+
+## Ongoing Projects {#ongoing}
+
+*A Guide for the Analysis of High-Resolution Respirometry Data Using R*.
+**Version 2 Available on [GitHub](https://github.com/stdecker)**
+
+
+## Disclaimer {#disclaimer}
+
+Last updated on `r Sys.Date()` using R version `r getRversion()` and
+[**pagedown**](https://github.com/rstudio/pagedown).
+
+# Main
+
+## Stephen Decker{#title}
+
+### PhD, ACSM-CEP 
+
+
+
+## Research Experience {data-icon="flask"}
+
+```{r}
+research %>% print_section('research_positions')
+```
+
+
+
+
+## Education {data-icon="graduation-cap"}
+
+```{r}
+research %>% print_section('education')
+```
+
+
+
+## Selected Publications {data-icon="book-open"}
+
+
+
+### Effects of Cigarette Smoke on *In Situ* Mitochondrial Substrate Oxidation of Slow- and Fast-Twitch Skeletal Muscles
+
+**Decker, ST**, Matias, AA, Bannon, ST, Madden, JP, Alexandrou-Majaj, N, Layec, G
+
+N/A
+
+2023
+
+*Life Sciences*
+
+### The Receptor for Advanced Glycation End Products (RAGE) is involved in Mitochondrial Function and Cigarette Smoke-Induced Oxidative Stress [PubMed](https://pubmed.ncbi.nlm.nih.gov/36586455/)
+
+Kwon, OS, **Decker, ST**,  Zhao, J, Hoidal, JR, Hueckstadt, T, Sanders,
+KA, Richardson, RS, Layec, G
+
+N/A
+
+2022
+
+*Free Radical Biology & Medicine*
+
+
+### Skeletal muscle Mitochondrial Adaptations Induced by Long-term Cigarette Smoke Exposure [PubMed](https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC8321829/)
+
+**Decker, ST**, Kwon, OS, Zhao, J, Hoidal, JR, Hueckstadt, T, Sanders,
+KA, Richardson, RS, Layec, G
+
+N/A
+
+2021
+
+*American Journal of Physiology - Endocrinology & Metabolism*
+
+
+
